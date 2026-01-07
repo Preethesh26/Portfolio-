@@ -219,25 +219,72 @@
                 </div>
 
                 <!-- LMS -->
-                <div class="project-card fade-up" style="transition-delay: 100ms;">
-                    <div class="project-image">
-                        <div class="placeholder-img color-2"></div>
+                <!-- AcademyPro (Featured Highlight) -->
+                <div class="project-card fade-up featured-project" style="grid-column: 1 / -1; margin-bottom: 2rem;">
+                    <div class="project-image" style="height: 300px;">
+                        <div class="placeholder-img color-2"
+                            style="background: linear-gradient(45deg, #2563eb, #7c3aed);"></div>
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/Preethesh26" target="_blank" class="icon-btn"
+                                <a href="https://academypro-liard.vercel.app/" target="_blank" class="icon-btn"
+                                    title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/Preethesh26/lms-platform" target="_blank" class="icon-btn"
                                     title="View Code"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Learning Management System</h3>
-                        <p class="project-desc">Full-featured online LMS for course content, assessments, and tracking,
-                            deployed for scalability.</p>
+                        <div class="badge-highlight"
+                            style="display:inline-block; background:var(--primary); padding:0.25rem 0.5rem; border-radius:4px; font-size:0.8rem; margin-bottom:0.5rem; color:#fff;">
+                            🚀 Featured Project</div>
+                        <h3 class="project-title" style="font-size: 1.8rem; margin-top: 0.5rem;">AcademyPro - Advanced
+                            LMS Platform</h3>
+                        <p class="project-desc" style="font-size: 1rem; line-height: 1.6;">
+                            A high-performance Learning Management System designed for premium student experiences and
+                            powerful administrative control.
+                            Features a <strong>Parallel Universe Demo Mode</strong> for safe exploration without
+                            affecting production data.
+                        </p>
+
+                        <div class="project-features"
+                            style="margin: 1.5rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <div class="feature-item">
+                                <i class="fas fa-user-graduate" style="color: var(--primary);"></i>
+                                <strong>Student Portal:</strong> Intelligent dashboard, hybrid video player, and daily
+                                streak tracking.
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-alt" style="color: var(--primary);"></i>
+                                <strong>Test Engine:</strong> Standalone aptitude tests with auto-grading and anti-cheat
+                                enforcement.
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-shield" style="color: var(--primary);"></i>
+                                <strong>Enterprise Security:</strong> 2FA (TOTP), Inactivity Auto-Lock, and distinct
+                                Admin/Demo environments.
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bell" style="color: var(--primary);"></i>
+                                <strong>Automated Alerts:</strong> Email notifications via Brevo for welcome credentials
+                                and support updates.
+                            </div>
+                        </div>
+
+                        <div class="demo-credentials glass-panel"
+                            style="padding: 1rem; margin-bottom: 1.5rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                            <h4 style="margin-bottom: 0.5rem; color: var(--accent);">Student Demo Access:</h4>
+                            <p style="margin: 0; font-family: monospace;">Email: demo-student@academypro.com | Pass:
+                                student123</p>
+                        </div>
+
                         <div class="project-tech">
-                            <span>React</span>
+                            <span>React 19</span>
                             <span>TypeScript</span>
+                            <span>Node.js</span>
                             <span>MongoDB</span>
-                            <span>Render</span>
+                            <span>Redis</span>
+                            <span>Brevo API</span>
+                            <span>Render/Vercel</span>
                         </div>
                     </div>
                 </div>
