@@ -122,7 +122,7 @@ function init() {
        Note: The HTML has "Preethesh" as default text. 
        We'll replace it with the dynamic typing effect.
     */
-    const words = ['Preethesh', 'AIML Engineer', 'Full Stack Dev', 'Prompt Engineer'];
+    const words = ['Preethesh'];
     const wait = 3000;
 
     // Clear initial text content to avoid duplication/glitch
