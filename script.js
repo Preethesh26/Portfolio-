@@ -113,7 +113,7 @@ class TypeWriter {
     }
 }
 
-// Init TypeWriter
+// Init TypeWriters
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
