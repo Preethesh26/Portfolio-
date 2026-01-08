@@ -6,11 +6,19 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 const cursorGlow = document.querySelector('.cursor-glow');
 
 // Navbar Scroll Effect
+let isScrolling = false;
+
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (!isScrolling) {
+        window.requestAnimationFrame(() => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            isScrolling = false;
+        });
+        isScrolling = true;
     }
 });
 
@@ -30,14 +38,6 @@ mobileLinks.forEach(link => {
     });
 });
 
-// Custom Cursor Glow Effect
-document.addEventListener('mousemove', (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
-
-    cursorGlow.style.left = `${x}px`;
-    cursorGlow.style.top = `${y}px`;
-});
 
 // Scroll Animation (Intersection Observer)
 const observerOptions = {
