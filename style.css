@@ -948,13 +948,28 @@ textarea:focus {
     display: flex !important;
     align-items: stretch;
     gap: 0;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    /* Force hardware acceleration to prevent tearing */
+    will-change: transform;
+  }
+
+  /* Fix for Chrome Glitch: Remove nested backdrop-filter */
+  .featured-project .project-overlay {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: rgba(0, 0, 0, 0.8);
+    /* Slightly darker fallback */
   }
 
   .featured-project .project-image {
     flex: 1;
     height: auto !important;
     min-height: 500px;
+
     border-right: 1px solid var(--glass-border);
+    overflow: hidden;
+    /* Ensure image doesn't bleed */
   }
 
   .featured-project .project-info {
