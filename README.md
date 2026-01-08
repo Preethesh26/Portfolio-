@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website built with vanilla HTML, CSS, and JavaScript. Featuring a dark-themed glassmorphism aesthetic with neon accents to showcase projects, skills, and experience.
 
-![Portfolio Preview](assets/academy_pro.png)
+![Portfolio Preview](assets/preview.png)
 
 ## 🌐 Live Demo
 **[View Live Portfolio](https://Preethesh26.github.io/Portfolio-)**
