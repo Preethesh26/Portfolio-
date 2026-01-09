@@ -5,17 +5,27 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 const cursorGlow = document.querySelector('.cursor-glow');
 
-// Navbar Scroll Effect
+// Navbar & Scroll Top Effect
 let isScrolling = false;
+const scrollTopBtn = document.getElementById('scrollTop');
 
 window.addEventListener('scroll', () => {
     if (!isScrolling) {
         window.requestAnimationFrame(() => {
+            // Navbar effect
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
+
+            // Scroll Top visibility
+            if (window.scrollY > 500) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+
             isScrolling = false;
         });
         isScrolling = true;
@@ -130,13 +140,21 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
-// Smooth Scrolling for Anchor Links (for older browsers compatibility)
+// Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
+
+        // Special case for Back to Top (#)
+        if (targetId === '#') {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            return;
+        }
 
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
