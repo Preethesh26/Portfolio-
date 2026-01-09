@@ -879,10 +879,16 @@ textarea:focus {
 
 /* Responsive */
 @media (max-width: 968px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 60px;
+    overflow: visible;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 80px;
+    gap: 40px;
   }
 
   .hero-desc {
@@ -938,7 +944,9 @@ textarea:focus {
   }
 
   .hero-visual {
-    transform: scale(0.8);
+    height: auto;
+    transform: none;
+    margin-top: 20px;
   }
 }
 
