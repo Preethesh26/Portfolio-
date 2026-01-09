@@ -881,14 +881,30 @@ textarea:focus {
 @media (max-width: 968px) {
   .hero {
     min-height: auto;
-    padding: 120px 0 60px;
+    padding: 100px 0 40px;
+    /* Reduced top padding */
     overflow: visible;
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
+    /* Put photo (visual) on top */
     text-align: center;
-    gap: 40px;
+    gap: 30px;
+    /* Tighter gap */
+  }
+
+  .hero-visual {
+    height: auto;
+    transform: none;
+    margin-bottom: 20px;
+    /* Space between photo and text */
+    order: 1;
+  }
+
+  .hero-text {
+    order: 2;
   }
 
   .hero-desc {
@@ -942,11 +958,23 @@ textarea:focus {
   .stats-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .hero-visual {
-    height: auto;
-    transform: none;
-    margin-top: 20px;
+/* Specific Mobile Fixes (Phone Portrait) */
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .glowing-circle {
+    width: 250px;
+    height: 250px;
+    filter: blur(60px);
   }
 }
 
