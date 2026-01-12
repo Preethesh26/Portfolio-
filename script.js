@@ -169,3 +169,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Mobile Project Card Touch Support
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach(card => {
+    card.addEventListener('click', function (e) {
+        // If clicking a link/button, let the default action happen
+        if (e.target.closest('a')) return;
+
+        // Toggle active class
+        this.classList.toggle('active');
+
+        // Optional: Close others to keep view clean
+        projectCards.forEach(c => {
+            if (c !== this) c.classList.remove('active');
+        });
+    });
+});

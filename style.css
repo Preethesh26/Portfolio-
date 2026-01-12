@@ -623,7 +623,8 @@ ul {
   transition: var(--transition);
 }
 
-.project-card:hover .project-overlay {
+.project-card:hover .project-overlay,
+.project-card.active .project-overlay {
   opacity: 1;
 }
 
@@ -634,8 +635,14 @@ ul {
   transition: var(--transition);
 }
 
-.project-card:hover .project-links {
+.project-card:hover .project-links,
+.project-card.active .project-links {
   transform: translateY(0);
+}
+
+.project-card:hover .project-image img,
+.project-card.active .project-image img {
+  transform: scale(1.05);
 }
 
 .icon-btn {
