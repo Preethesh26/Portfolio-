@@ -289,24 +289,31 @@
 
 
                 <h2><i class="fas fa-server"></i> Deployment Logic</h2>
-                <div class="glass-panel" style="margin-top: 20px; background: rgba(255,255,255,0.03);">
-                    <h3>Frontend (Vercel)</h3>
-                    <p>The frontend is optimized for <strong>Vercel</strong>. It uses the Vite preset and connects to
-                        the backend via the <code>VITE_API_URL</code> environment variable.</p>
+                <div class="glass-panel" style="margin-top: 20px; padding: 30px; background: rgba(255,255,255,0.03);">
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="margin-top: 0; margin-bottom: 15px;">Frontend (Vercel)</h3>
+                        <p>The frontend is optimized for <strong>Vercel</strong>. It uses the Vite preset and connects
+                            to
+                            the backend via the <code>VITE_API_URL</code> environment variable.</p>
+                    </div>
 
-                    <h3>Backend (Render)</h3>
-                    <p>The backend is hosted on <strong>Render</strong> as a Web Service.</p>
-                    <ul>
-                        <li><strong>Node Runtime</strong>: Optimized for Render's environment.</li>
-                        <li><strong>CORS Management</strong>: Dynamically handles requests from the Vercel frontend.
-                        </li>
-                        <li><strong>Media & Storage</strong>: Assets like thumbnails and course videos are served via
-                            <strong>Cloudflare R2</strong> for high performance and zero egress costs.
-                        </li>
-                        <li><strong>Continuous Deployment</strong>: Automatically redeploys on every push to the
-                            <code>main</code> branch.
-                        </li>
-                    </ul>
+                    <div>
+                        <h3 style="margin-bottom: 15px;">Backend (Render)</h3>
+                        <p style="margin-bottom: 15px;">The backend is hosted on <strong>Render</strong> as a Web
+                            Service.</p>
+                        <ul style="margin-bottom: 0;">
+                            <li><strong>Node Runtime</strong>: Optimized for Render's environment.</li>
+                            <li><strong>CORS Management</strong>: Dynamically handles requests from the Vercel frontend.
+                            </li>
+                            <li><strong>Media & Storage</strong>: Assets like thumbnails and course videos are served
+                                via
+                                <strong>Cloudflare R2</strong> for high performance and zero egress costs.
+                            </li>
+                            <li><strong>Continuous Deployment</strong>: Automatically redeploys on every push to the
+                                <code>main</code> branch.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div style="margin-top: 50px; text-align: center; opacity: 0.7; font-size: 0.9rem;">
