@@ -8,8 +8,15 @@ const cursorGlow = document.querySelector('.cursor-glow');
 // Navbar & Scroll Top Effect
 let isScrolling = false;
 const scrollTopBtn = document.getElementById('scrollTop');
+const scrollBar = document.getElementById('scrollBar');
 
 window.addEventListener('scroll', () => {
+    // Scroll Progress
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    if (scrollBar) scrollBar.style.width = scrolled + "%";
+
     if (!isScrolling) {
         window.requestAnimationFrame(() => {
             // Navbar effect
