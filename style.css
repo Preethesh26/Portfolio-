@@ -677,8 +677,8 @@ ul {
 .project-desc {
   font-size: 0.95rem;
   margin-bottom: 20px;
-  height: 60px;
-  overflow: hidden;
+  min-height: 60px;
+  height: auto;
 }
 
 .project-tech {
