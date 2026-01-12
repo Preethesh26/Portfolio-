@@ -286,53 +286,7 @@
                     <span class="skill-tag">Render</span>
                 </div>
 
-                <h2><i class="fas fa-box"></i> Getting Started</h2>
 
-                <h3>Prerequisites</h3>
-                <ul>
-                    <li>Node.js (v18 or higher)</li>
-                    <li>MongoDB account (Atlas)</li>
-                    <li>Brevo API Key</li>
-                </ul>
-
-                <h3>Installation</h3>
-                <ol style="margin-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
-                    <li style="margin-bottom: 15px;">
-                        <strong>Clone & Install</strong>
-                        <pre
-                            style="background: #1e1e1e; padding: 15px; border-radius: 8px; margin-top: 10px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;"><code>git clone https://github.com/Preethesh26/lms-platform.git
-npm install</code></pre>
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>Environment Configuration</strong>
-                        <p>Create a <code>.env</code> in the root (frontend) and <code>backend/</code> directories.</p>
-                        <p><strong>Root <code>.env</code> (Frontend):</strong></p>
-                        <pre
-                            style="background: #1e1e1e; padding: 15px; border-radius: 8px; margin-top: 10px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;"><code>VITE_API_URL=https://your-backend-url.onrender.com/api</code></pre>
-
-                        <p style="margin-top: 10px;"><strong>Backend <code>.env</code>:</strong></p>
-                        <pre
-                            style="background: #1e1e1e; padding: 15px; border-radius: 8px; margin-top: 10px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;"><code>MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-BREVO_API_KEY=your_brevo_api_key</code></pre>
-                    </li>
-                    <li style="margin-bottom: 15px;">
-                        <strong>Execution</strong>
-                        <pre
-                            style="background: #1e1e1e; padding: 15px; border-radius: 8px; margin-top: 10px; overflow-x: auto; font-family: 'Courier New', Courier, monospace;"><code># Development
-npm run dev
-
-# Backend (from backend directory)
-npm start
-
-# Create Demo Accounts
-node createDemoAdmin.js
-node createDemoStudent.js
-
-# Admin Migrations
-node upgradeSuperAdmin.js [email]</code></pre>
-                    </li>
-                </ol>
 
                 <h2><i class="fas fa-server"></i> Deployment Logic</h2>
                 <div class="glass-panel" style="margin-top: 20px; background: rgba(255,255,255,0.03);">
