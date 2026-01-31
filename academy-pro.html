@@ -120,6 +120,18 @@
                     management, back-end API logic, and automated services.
                 </p>
 
+
+                <h2><i class="fas fa-lightbulb"></i> Project Objective</h2>
+                <p>
+                    AcademyPro was developed to gain hands-on experience in designing and building a
+                    production-grade Learning Management System. The focus was on implementing real-world
+                    concepts such as role-based access control, secure authentication, scalable REST APIs,
+                    background synchronization, and safe demo environments beyond basic CRUD functionality.
+                </p>
+
+
+
+
                 <h2><i class="fas fa-globe"></i> Live Demo & Inquiries</h2>
                 <p>Check out the live website: <a href="https://academypro-liard.vercel.app/" target="_blank"
                         style="color: var(--primary);">https://academypro-liard.vercel.app/</a></p>
@@ -215,6 +227,19 @@
                     </li>
                 </ul>
 
+
+                <h3><i class="fas fa-user-shield"></i> Super Admin Control Layer</h3>
+                <p>
+                AcademyPro includes a dedicated Super Admin role designed for high-privilege system
+                governance and security enforcement.
+                </p>
+                <ul>
+                    <li>Only Super Admins can create, edit, or remove other administrator accounts.</li>
+                    <li>Strict separation between Admin and Super Admin privileges.</li>
+                    <li>Exclusive access to system-level controls and impersonation tools.</li>
+                    <li>Mandatory 2FA and inactivity auto-lock enforcement.</li>
+                </ul>
+
                 <h3>🛡️ Enterprise Security (Admin Protection)</h3>
                 <p>AcademyPro implements industry-standard security for administrative accounts:</p>
                 <ul>
@@ -236,6 +261,15 @@
                     </li>
                     <li><strong>Password Security</strong>: Bcrypt hashing with proper salt generation</li>
                     <li><strong>Session Management</strong>: JWT-based authentication with secure token handling</li>
+                </ul>
+
+                <h3><i class="fas fa-key"></i> Authentication & Authorization Flow</h3>
+                <ul>
+                    <li>JWT-based authentication for all users.</li>
+                    <li>Role resolution at login (Student, Admin, Super Admin).</li>
+                    <li>Protected routes enforced on both frontend and backend.</li>
+                    <li>2FA verification required for privileged accounts.</li>
+                    <li>Automatic session lock on inactivity.</li>
                 </ul>
 
                 <h3>🛡 Secure Demo Experience (Parallel Universe)</h3>
@@ -286,7 +320,20 @@
                     <span class="skill-tag">Render</span>
                 </div>
 
+                <h2><i class="fas fa-sitemap"></i> System Architecture Overview</h2>
+                <ul>
+                    <li><strong>Frontend</strong>: React + Vite for UI and global state synchronization.</li>
+                    <li><strong>Backend</strong>: Node.js + Express providing RESTful APIs.</li>
+                    <li><strong>Database</strong>: MongoDB with schema validation and indexed fields.</li>
+                    <li><strong>Storage</strong>: Cloudflare R2 for media assets.</li>
+                    <li><strong>Email</strong>: Brevo for transactional notifications.</li>
+                </ul>
 
+                    <h2><i class="fas fa-layer-group"></i> Environment Separation</h2>
+                    <p>
+                    The platform maintains strict separation between development, demo, and production
+                    environments to prevent accidental data exposure or corruption.
+                    </p>
 
                 <h2><i class="fas fa-server"></i> Deployment Logic</h2>
                 <div class="glass-panel" style="margin-top: 20px; padding: 30px; background: rgba(255,255,255,0.03);">
@@ -313,8 +360,24 @@
                                 <code>main</code> branch.
                             </li>
                         </ul>
+                        <h3><i class="fas fa-database"></i> Database Design & Validation</h3>
+                    <ul>
+                        <li>Unique indexes for emails, enrollment IDs, test IDs, and course titles.</li>
+                        <li>Schema-level validation to ensure data integrity.</li>
+                        <li>Optimized queries for dashboards and analytics.</li>
+                    </ul>
+
                     </div>
+                   
                 </div>
+                <h2><i class="fas fa-road"></i> Future Enhancements</h2>
+                <ul>
+                    <li>Payment gateway integration.</li>
+                    <li>Instructor dashboards.</li>
+                    <li>Advanced analytics and reporting.</li>
+                    <li>PWA and mobile-first optimizations.</li>
+                </ul>
+
 
                 <div style="margin-top: 50px; text-align: center; opacity: 0.7; font-size: 0.9rem;">
                     <p>Developed by <a href="https://github.com/Preethesh26" target="_blank"

@@ -177,4 +177,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
 
