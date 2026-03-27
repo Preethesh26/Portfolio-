@@ -26,6 +26,37 @@ export const skills = [
   },
 ];
 
+export const leadership = [
+  {
+    icon: "fas fa-users",
+    title: "Tech Team Lead — 23 Interns",
+    desc: "Currently leading and mentoring a team of 23 interns split across two groups — 11 working on-site and 12 remotely. Responsible for assigning projects, guiding development workflows, and ensuring smooth collaboration across both teams.",
+    stats: [
+      { value: "23", label: "Interns Managed" },
+      { value: "11", label: "On-site (WFO)" },
+      { value: "12", label: "Remote (WFH)" },
+    ],
+  },
+  {
+    icon: "fas fa-laptop-code",
+    title: "LMS Project Ownership",
+    desc: "The on-site team contributes directly to the Learning Management System (LMS) I am actively building. I oversee architecture decisions, feature planning, and code quality across the entire project.",
+    stats: [
+      { value: "LMS", label: "Core Project" },
+      { value: "Full", label: "Stack Ownership" },
+    ],
+  },
+  {
+    icon: "fas fa-cogs",
+    title: "Core Technical Responsibilities",
+    desc: "Alongside team leadership, I continue to handle website development, backend implementation, and system architecture — ensuring efficient execution and on-time delivery of all ongoing projects.",
+    stats: [
+      { value: "Dev", label: "Frontend & Backend" },
+      { value: "Arch", label: "System Design" },
+    ],
+  },
+];
+
 export const experience = [
   {
     date: "Dec 2025 – Present",

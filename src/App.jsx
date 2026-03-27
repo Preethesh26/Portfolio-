@@ -1,17 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
 import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Leadership from './components/Leadership';
 import Internships from './components/Internships';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ProfessionalDetail from './pages/ProfessionalDetail';
 
-export default function App() {
+function Portfolio() {
   return (
     <>
       <ScrollProgress />
@@ -20,6 +23,7 @@ export default function App() {
       <About />
       <Skills />
       <Experience />
+      <Leadership />
       <Internships />
       <Projects />
       <Certifications />
@@ -27,5 +31,14 @@ export default function App() {
       <Contact />
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/summary" element={<ProfessionalDetail />} />
+    </Routes>
   );
 }

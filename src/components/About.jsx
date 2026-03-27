@@ -34,6 +34,7 @@ export default function About() {
                 { value: 'CGPA', sub: '9.09' },
                 { value: '6+', sub: 'Projects' },
                 { value: '4+', sub: 'Certifications' },
+                { value: '23', sub: 'Interns Led' },
               ].map(s => (
                 <div key={s.sub} className="stat-item">
                   <h3 className="gradient-text">{s.value}</h3>
