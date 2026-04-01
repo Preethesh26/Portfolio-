@@ -144,6 +144,7 @@ export const projects = [
     tech: ["Docker", "GitHub Actions", "Jenkins", "Kubernetes", "Vercel", "Render", "React", "Node.js", "MongoDB Atlas", "Prometheus", "Grafana"],
     links: [
       { href: "/academypro-v2", icon: "fas fa-info-circle", title: "View Details", internal: true },
+      { href: "https://academypro-official.vercel.app", icon: "fas fa-external-link-alt", title: "Live App" },
       { href: "https://github.com/Preethesh26/lms-platform-devops", icon: "fab fa-github", title: "View Code" },
     ],
   },
