@@ -166,6 +166,7 @@ export const projects = [
     adminNote: true,
     tech: ["React 19", "TypeScript", "Node.js", "MongoDB", "Redis", "Brevo API", "Render/Vercel"],
     links: [
+      { href: "/academypro-v1", icon: "fas fa-info-circle", title: "View Details", internal: true },
       { href: "https://academypro-official-v1.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Demo" },
       { href: "https://github.com/Preethesh26/lms-platform", icon: "fab fa-github", title: "View Code" },
     ],

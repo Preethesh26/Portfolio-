@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ProfessionalDetail from './pages/ProfessionalDetail';
 import AcademyProV2Detail from './pages/AcademyProV2Detail';
+import AcademyProV1Detail from './pages/AcademyProV1Detail';
 
 function Portfolio() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="/summary" element={<ProfessionalDetail />} />
+      <Route path="/academypro-v1" element={<AcademyProV1Detail />} />
       <Route path="/academypro-v2" element={<AcademyProV2Detail />} />
     </Routes>
   );
