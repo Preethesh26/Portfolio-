@@ -27,7 +27,15 @@ export default function AcademyProV2Detail() {
             </a>
             <a href="https://github.com/Preethesh26/lms-platform-devops" target="_blank" rel="noreferrer"
               style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#fff', textDecoration: 'none', fontWeight: 600 }}>
-              <i className="fab fa-github" /> GitHub Repo
+              <i className="fab fa-github" /> GitHub (v2)
+            </a>
+            <a href="https://academypro-official-v1.vercel.app" target="_blank" rel="noreferrer"
+              style={{ background: 'rgba(100,100,255,0.1)', border: '1px solid rgba(100,100,255,0.3)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#a0a0ff', textDecoration: 'none', fontWeight: 600 }}>
+              <i className="fas fa-external-link-alt" /> Live App (v1)
+            </a>
+            <a href="https://github.com/Preethesh26/lms-platform" target="_blank" rel="noreferrer"
+              style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.1)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#888', textDecoration: 'none', fontWeight: 600 }}>
+              <i className="fab fa-github" /> GitHub (v1)
             </a>
           </div>
         </div>
