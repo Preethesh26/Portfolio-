@@ -129,10 +129,31 @@ export const projects = [
   {
     featured: true,
     image: "/assets/academy_pro.png",
+    alt: "AcademyPro v2 DevOps Edition",
+    badge: "⚙️ Version 2 — DevOps Edition",
+    badgeColor: "#e67e22",
+    title: "AcademyPro v2 — DevOps Edition",
+    desc: "The evolved version of AcademyPro LMS with a real-world DevOps workflow and enhanced features. Containerized locally with Docker, automated deployments via GitHub Actions CI/CD, and hosted on Netlify (frontend) and Render (backend) — plus new advanced features built on top of v1.",
+    features: [
+      { icon: "fab fa-docker", label: "Docker", detail: "App containerized locally using Docker and docker-compose for consistent dev environments." },
+      { icon: "fas fa-code-branch", label: "GitHub Actions CI/CD", detail: "Automated pipeline on every push — build, test, and deploy without manual steps." },
+      { icon: "fas fa-rocket", label: "Netlify + Render", detail: "Frontend deployed on Netlify, backend on Render with auto-deploy on merge." },
+      { icon: "fas fa-plus-circle", label: "Advanced Features", detail: "New features added on top of v1 — extended from the original AcademyPro platform." },
+    ],
+    architecture: ["Code Push", "GitHub Actions", "Docker Build", "Netlify (Frontend)", "Render (Backend)"],
+    tech: ["Docker", "GitHub Actions", "Netlify", "Render", "React", "Node.js", "MongoDB"],
+    links: [
+      { href: "/academypro-v2", icon: "fas fa-info-circle", title: "View Details", internal: true },
+      { href: "https://github.com/Preethesh26/lms-platform", icon: "fab fa-github", title: "View Code" },
+    ],
+  },
+  {
+    featured: true,
+    image: "/assets/academy_pro.png",
     alt: "AcademyPro LMS Dashboard",
-    badge: "🚀 Featured Project",
+    badge: "🚀 Version 1 — Original",
     badgeColor: "var(--primary)",
-    title: "AcademyPro - Advanced LMS Platform",
+    title: "AcademyPro v1 — Advanced LMS Platform",
     desc: "A high-performance Learning Management System designed for premium student experiences and powerful administrative control. Features a Parallel Universe Demo Mode for safe exploration without affecting production data.",
     features: [
       { icon: "fas fa-user-graduate", label: "Student Portal", detail: "Intelligent dashboard, hybrid video player, and daily streak tracking." },

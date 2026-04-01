@@ -1,5 +1,13 @@
+import { Link } from 'react-router-dom';
 import { useFadeUp } from '../hooks/useFadeUp';
 import { projects } from '../data';
+
+function ProjectLink({ l, i }) {
+  if (l.internal) {
+    return <Link key={i} to={l.href} className="icon-btn" title={l.title}><i className={l.icon} /></Link>;
+  }
+  return <a key={i} href={l.href} target="_blank" rel="noreferrer" className="icon-btn" title={l.title}><i className={l.icon} /></a>;
+}
 
 function FeaturedProject({ p }) {
   const ref = useFadeUp();
@@ -11,11 +19,7 @@ function FeaturedProject({ p }) {
         <img src={p.image} alt={p.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         <div className="project-overlay">
           <div className="project-links">
-            {p.links.map((l, i) => (
-              <a key={i} href={l.href} target="_blank" rel="noreferrer" className="icon-btn" title={l.title}>
-                <i className={l.icon} />
-              </a>
-            ))}
+            {p.links.map((l, i) => <ProjectLink key={i} l={l} i={i} />)}
           </div>
         </div>
       </div>
@@ -89,11 +93,7 @@ function ProjectCard({ p }) {
         <img src={p.image} alt={p.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', ...(p.imgStyle || {}) }} />
         <div className="project-overlay">
           <div className="project-links">
-            {p.links.map((l, i) => (
-              <a key={i} href={l.href} target="_blank" rel="noreferrer" className="icon-btn" title={l.title}>
-                <i className={l.icon} />
-              </a>
-            ))}
+            {p.links.map((l, i) => <ProjectLink key={i} l={l} i={i} />)}
           </div>
         </div>
       </div>
