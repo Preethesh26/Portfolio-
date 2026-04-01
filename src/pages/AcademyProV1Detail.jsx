@@ -2,22 +2,45 @@ import { useNavigate, Link } from 'react-router-dom';
 
 export default function AcademyProV1Detail() {
   const navigate = useNavigate();
+
   return (
     <div className="pd-page">
       <div className="pd-container">
 
         {/* Back button */}
-        <div style={{ marginBottom: '2rem', paddingTop: '1rem' }}>
+        <div style={{ paddingTop: '2rem', marginBottom: '2.5rem' }}>
           <button onClick={() => navigate(-1)}
             style={{ background: 'none', border: '1px solid rgba(255,255,255,0.15)', color: 'var(--text-secondary)', padding: '0.5rem 1.2rem', borderRadius: '8px', cursor: 'pointer', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <i className="fas fa-arrow-left" /> Back
           </button>
         </div>
+
+        {/* Page Heading */}
+        <div style={{ marginBottom: '3rem' }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--primary)', marginBottom: '0.75rem' }}>
+            🚀 Version 1 — LMS Platform
+          </div>
+          <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, lineHeight: 1.2, marginBottom: '1rem', background: 'linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            AcademyPro v1 — LMS Platform
+          </h1>
+          <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', lineHeight: 1.7, maxWidth: '680px', marginBottom: '1.5rem' }}>
+            A full-stack Learning Management System with student portal, standalone test engine, enterprise-grade security, gamification, and a Parallel Universe Demo Mode for safe exploration.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+            {['Student Portal', '2FA + Inactivity Lock', 'Test Engine', 'Demo Mode', 'Email Notifications', 'Gamification'].map(tag => (
+              <span key={tag} style={{ background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', padding: '0.3rem 0.9rem', borderRadius: '50px', fontSize: '0.82rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Live Links */}
         <div className="pd-section">
           <h2>🔗 Live Links</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
             <a href="https://academypro-official-v1.vercel.app" target="_blank" rel="noreferrer"
-              style={{ background: 'rgba(var(--primary-rgb),0.15)', border: '1px solid rgba(var(--primary-rgb),0.4)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: 'var(--primary)', textDecoration: 'none', fontWeight: 600 }}>
+              style={{ background: 'rgba(99,102,241,0.15)', border: '1px solid rgba(99,102,241,0.4)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#818cf8', textDecoration: 'none', fontWeight: 600 }}>
               <i className="fas fa-external-link-alt" /> Live App (v1)
             </a>
             <a href="https://github.com/Preethesh26/lms-platform" target="_blank" rel="noreferrer"
@@ -117,7 +140,7 @@ export default function AcademyProV1Detail() {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center', fontSize: '0.9rem' }}>
               {['React 19 (Frontend)', 'Node.js + Express (API)', 'MongoDB (Database)', 'Vercel (Frontend Host)', 'Render (Backend Host)', 'Brevo (Email)', 'Cloudflare R2 (Storage)'].map((step, i, arr) => (
                 <span key={i} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span style={{ background: 'rgba(var(--primary-rgb),0.15)', border: '1px solid rgba(var(--primary-rgb),0.3)', padding: '0.3rem 0.7rem', borderRadius: '6px' }}>{step}</span>
+                  <span style={{ background: 'rgba(99,102,241,0.12)', border: '1px solid rgba(99,102,241,0.3)', padding: '0.3rem 0.7rem', borderRadius: '6px' }}>{step}</span>
                   {i < arr.length - 1 && <i className="fas fa-arrow-right" style={{ opacity: 0.4 }} />}
                 </span>
               ))}
@@ -150,7 +173,7 @@ export default function AcademyProV1Detail() {
           <h2>🛠 Tech Stack</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
             {['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'JWT', 'bcryptjs', 'TOTP (otplib)', 'Brevo API', 'Gemini AI', 'Cloudflare R2', 'Google Sheets API', 'Vercel', 'Render'].map(t => (
-              <span key={t} style={{ background: 'rgba(var(--primary-rgb),0.12)', border: '1px solid rgba(var(--primary-rgb),0.3)', padding: '0.3rem 0.8rem', borderRadius: '20px', fontSize: '0.82rem' }}>{t}</span>
+              <span key={t} style={{ background: 'rgba(99,102,241,0.12)', border: '1px solid rgba(99,102,241,0.3)', padding: '0.3rem 0.8rem', borderRadius: '20px', fontSize: '0.82rem' }}>{t}</span>
             ))}
           </div>
         </div>
