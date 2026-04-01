@@ -1,24 +1,18 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function AcademyProV1Detail() {
+  const navigate = useNavigate();
   return (
     <div className="pd-page">
       <div className="pd-container">
 
-        {/* Header */}
-        <div className="pd-header">
-          <div className="pd-badge" style={{ background: 'var(--primary)' }}>🚀 Version 1 — LMS Platform</div>
-          <h1>AcademyPro v1 — LMS Platform</h1>
-          <p className="pd-subtitle">A full-stack Learning Management System with student portal, test engine, enterprise security, and a Parallel Universe Demo Mode</p>
-          <div className="pd-meta">
-            <span><i className="fas fa-user-graduate" /> Student Portal</span>
-            <span><i className="fas fa-shield-alt" /> 2FA + Inactivity Lock</span>
-            <span><i className="fas fa-file-alt" /> Test Engine</span>
-            <span><i className="fas fa-bell" /> Email Notifications</span>
-          </div>
+        {/* Back button */}
+        <div style={{ marginBottom: '2rem', paddingTop: '1rem' }}>
+          <button onClick={() => navigate(-1)}
+            style={{ background: 'none', border: '1px solid rgba(255,255,255,0.15)', color: 'var(--text-secondary)', padding: '0.5rem 1.2rem', borderRadius: '8px', cursor: 'pointer', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <i className="fas fa-arrow-left" /> Back
+          </button>
         </div>
-
-        {/* Live Links */}
         <div className="pd-section">
           <h2>🔗 Live Links</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
@@ -159,13 +153,6 @@ export default function AcademyProV1Detail() {
               <span key={t} style={{ background: 'rgba(var(--primary-rgb),0.12)', border: '1px solid rgba(var(--primary-rgb),0.3)', padding: '0.3rem 0.8rem', borderRadius: '20px', fontSize: '0.82rem' }}>{t}</span>
             ))}
           </div>
-        </div>
-
-        {/* Back */}
-        <div className="pd-section" style={{ textAlign: 'center' }}>
-          <Link to="/#projects" className="btn btn-outline">
-            <i className="fas fa-arrow-left" /> Back to Projects
-          </Link>
         </div>
 
       </div>
