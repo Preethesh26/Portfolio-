@@ -6,9 +6,9 @@ export default function AcademyProV2Detail() {
       <div className="pd-container">
 
         <div className="pd-header">
-          <div className="pd-badge" style={{ background: '#e67e22' }}> Version 2 — DevOps + Multi-Tenant Edition</div>
-          <h1>AcademyPro v2 — DevOps Edition</h1>
-          <p className="pd-subtitle">Evolved from v1 with a real-world DevOps pipeline, multi-tenant architecture, and enterprise-grade security</p>
+          <div className="pd-badge" style={{ background: '#e67e22' }}>⚙️ Version 2 — DevOps Edition + Advanced Platform</div>
+          <h1>AcademyPro v2 — DevOps Edition + Advanced Platform</h1>
+          <p className="pd-subtitle">Built on top of v1 — adds a real-world DevOps pipeline, multi-tenant architecture, platform super admin with triple-step auth + 2FA, and Kubernetes manifests</p>
           <div className="pd-meta">
             <span><i className="fab fa-docker" /> Docker</span>
             <span><i className="fas fa-code-branch" /> GitHub Actions CI/CD</span>

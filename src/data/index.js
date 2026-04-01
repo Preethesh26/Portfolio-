@@ -130,9 +130,9 @@ export const projects = [
     featured: true,
     image: "/assets/academy_pro.png",
     alt: "AcademyPro v2 DevOps Edition",
-    badge: "⚙️ Version 2 — DevOps Edition",
+    badge: "⚙️ Version 2 — DevOps Edition + Advanced Platform",
     badgeColor: "#e67e22",
-    title: "AcademyPro v2 — DevOps Edition",
+    title: "AcademyPro v2 — DevOps Edition + Advanced Platform",
     desc: "The evolved version of AcademyPro LMS with a real-world DevOps workflow, multi-tenant architecture, and enterprise-grade security. Containerized locally with Docker, automated deployments via GitHub Actions CI/CD, multi-tenant org management with platform super admin triple-step auth + 2FA, and Kubernetes manifests for local cluster deployment.",
     features: [
       { icon: "fab fa-docker", label: "Docker + CI/CD", detail: "App containerized locally. GitHub Actions builds, pushes to Docker Hub, and auto-deploys to Vercel + Render on every push to main." },
@@ -152,9 +152,9 @@ export const projects = [
     featured: true,
     image: "/assets/academy_pro.png",
     alt: "AcademyPro LMS Dashboard",
-    badge: "🚀 Version 1 — Original",
+    badge: "🚀 Version 1 — LMS Platform",
     badgeColor: "var(--primary)",
-    title: "AcademyPro v1 — Advanced LMS Platform",
+    title: "AcademyPro v1 — LMS Platform",
     desc: "A high-performance Learning Management System designed for premium student experiences and powerful administrative control. Features a Parallel Universe Demo Mode for safe exploration without affecting production data.",
     features: [
       { icon: "fas fa-user-graduate", label: "Student Portal", detail: "Intelligent dashboard, hybrid video player, and daily streak tracking." },
