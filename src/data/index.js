@@ -132,6 +132,7 @@ export const projects = [
     alt: "AcademyPro v2 DevOps Edition",
     badge: "⚙️ Version 2 — DevOps Edition + Advanced Platform",
     badgeColor: "#e67e22",
+    underDevelopment: true,
     title: "AcademyPro v2 — DevOps Edition + Advanced Platform",
     desc: "The evolved version of AcademyPro LMS with a real-world DevOps workflow, multi-tenant architecture, and enterprise-grade security. Containerized locally with Docker, automated deployments via GitHub Actions CI/CD, multi-tenant org management with platform super admin triple-step auth + 2FA, and Kubernetes manifests for local cluster deployment.",
     features: [

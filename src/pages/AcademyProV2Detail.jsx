@@ -1,12 +1,31 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function AcademyProV2Detail() {
+  const navigate = useNavigate();
+
   return (
     <div className="pd-page">
       <div className="pd-container">
 
+        {/* Back button */}
+        <div style={{ paddingTop: '2rem', marginBottom: '2rem' }}>
+          <button onClick={() => navigate(-1)}
+            style={{ background: 'none', border: '1px solid rgba(255,255,255,0.15)', color: 'var(--text-secondary)', padding: '0.5rem 1.2rem', borderRadius: '8px', cursor: 'pointer', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <i className="fas fa-arrow-left" /> Back
+          </button>
+        </div>
+
+        {/* Under Development Banner */}
+        <div style={{ background: 'rgba(230,126,34,0.08)', border: '1px solid rgba(230,126,34,0.35)', borderRadius: '12px', padding: '0.9rem 1.4rem', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <span style={{ fontSize: '1.1rem' }}>🚧</span>
+          <div>
+            <span style={{ color: '#e67e22', fontWeight: 700, fontSize: '0.95rem' }}>Ongoing Project — Under Active Development</span>
+            <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>This version is currently being built. Features listed may be in progress or planned.</p>
+          </div>
+        </div>
+
         <div className="pd-header">
-          <div className="pd-badge" style={{ background: '#e67e22' }}>⚙️ Version 2 — DevOps Edition + Advanced Platform</div>
+          {/* <div className="pd-badge" style={{ background: '#e67e22' }}>⚙️ Version 2 — DevOps Edition + Advanced Platform</div> */}
           <h1>AcademyPro v2 — DevOps Edition + Advanced Platform</h1>
           <p className="pd-subtitle">Built on top of v1 — adds a real-world DevOps pipeline, multi-tenant architecture, platform super admin with triple-step auth + 2FA, and Kubernetes manifests</p>
           <div className="pd-meta">
@@ -242,9 +261,9 @@ export default function AcademyProV2Detail() {
         </div>
 
         <div className="pd-section" style={{ textAlign: 'center' }}>
-          <Link to="/#projects" className="btn btn-outline">
-            <i className="fas fa-arrow-left" /> Back to Projects
-          </Link>
+          <button onClick={() => navigate(-1)} className="btn btn-outline">
+            <i className="fas fa-arrow-left" /> Back
+          </button>
         </div>
 
       </div>

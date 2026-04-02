@@ -24,8 +24,15 @@ function FeaturedProject({ p }) {
         </div>
       </div>
       <div className="project-info">
-        <div className="badge-highlight" style={{ display: 'inline-block', background: accentColor, padding: '0.25rem 0.5rem', borderRadius: '4px', fontSize: '0.8rem', marginBottom: '0.5rem', color: '#fff' }}>
-          {p.badge}
+        <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+          <div className="badge-highlight" style={{ display: 'inline-block', background: accentColor, padding: '0.25rem 0.5rem', borderRadius: '4px', fontSize: '0.8rem', color: '#fff' }}>
+            {p.badge}
+          </div>
+          {p.underDevelopment && (
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', background: 'rgba(230,126,34,0.12)', border: '1px solid rgba(230,126,34,0.4)', padding: '0.25rem 0.7rem', borderRadius: '4px', fontSize: '0.78rem', color: '#e67e22', fontWeight: 600 }}>
+              🚧 Under Development
+            </div>
+          )}
         </div>
         <h3 className="project-title" style={{ fontSize: '1.8rem', marginTop: '0.5rem' }}>{p.title}</h3>
         <p className="project-desc" style={{ fontSize: '1rem', lineHeight: 1.6 }}>{p.desc}</p>
