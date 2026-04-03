@@ -110,18 +110,21 @@ export const certifications = [
     title: "AWS Solutions Architect",
     issuer: "MicroDegree | January 2026",
     tags: ["AWS EC2", "AWS S3", "IAM", "VPC", "RDS", "Auto Scaling", "CloudWatch", "Elastic Load Balancer"],
+    credentialUrl: "https://drive.google.com/file/d/1GK9OFRMaBQUoqDObsxVOs9k-QaDVbsj2/view?usp=sharing",
   },
   {
     icon: "fas fa-cogs",
     title: "DevOps Engineer Certification",
     issuer: "MicroDegree | March 2026",
     tags: ["Docker", "Kubernetes", "Jenkins", "CI/CD Pipelines", "Linux", "Git", "Automation"],
+    credentialUrl: "https://drive.google.com/file/d/1phen-qxkIcrLK6azR6ZSeDrdYOsTyKZ3/view?usp=sharing",
   },
   {
     icon: "fas fa-cloud",
     title: "AWS & DevOps Internship Program",
     issuer: "MicroDegree | March 2026",
     tags: ["AWS Deployment", "Docker Containers", "Kubernetes Basics", "Jenkins CI/CD", "Infrastructure Automation"],
+    credentialUrl: "https://drive.google.com/file/d/1VsU10iP5oKtaZQ2u_9gYKTcwLC1Q3Oh5/view?usp=drive_link",
   },
 ];
 
