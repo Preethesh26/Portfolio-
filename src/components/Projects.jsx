@@ -83,6 +83,16 @@ function FeaturedProject({ p }) {
           </div>
         )}
 
+        {p.qrCode && (
+          <div className="glass-panel" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', padding: '1rem', marginBottom: '1.5rem', background: 'rgba(41,128,185,0.1)', border: '1px solid rgba(41,128,185,0.3)', borderRadius: '8px' }}>
+            <img src={p.qrCode.image} alt="QR Code" style={{ width: '90px', height: '90px', borderRadius: '6px', objectFit: 'contain', background: '#fff', padding: '4px' }} />
+            <div>
+              <h4 style={{ marginBottom: '0.35rem', color: '#5dade2' }}><i className="fas fa-qrcode" /> Mobile App</h4>
+              <p style={{ margin: 0, fontSize: '0.9rem', opacity: 0.85 }}>{p.qrCode.label}</p>
+            </div>
+          </div>
+        )}
+
         <div className="project-tech">
           {p.tech.map(t => <span key={t}>{t}</span>)}
         </div>

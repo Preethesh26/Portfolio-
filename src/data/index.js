@@ -2,7 +2,7 @@ export const skills = [
   {
     category: "Development",
     icon: "fa-code",
-    tags: ["JavaScript", "React", "HTML/CSS", "Tailwind CSS", "Bootstrap", "Python", "Flask", "Node.js", "REST APIs"],
+    tags: ["JavaScript", "React", "HTML/CSS", "Tailwind CSS", "Bootstrap", "Python", "Flask", "FastAPI", "Node.js", "REST APIs"],
   },
   {
     category: "Cloud, DevOps & Platforms",
@@ -17,7 +17,7 @@ export const skills = [
   {
     category: "Data, AI & Analytics",
     icon: "fa-database",
-    tags: ["MongoDB", "MySQL", "OpenCV", "Generative AI", "RAG", "Streamlit", "Google Analytics (GA4)"],
+    tags: ["MongoDB", "MySQL", "MariaDB", "SQLAlchemy", "OpenCV", "Generative AI", "RAG", "Streamlit", "Google Analytics (GA4)"],
   },
   {
     category: "SEO & Marketing Analytics",
@@ -59,13 +59,20 @@ export const leadership = [
 
 export const experience = [
   {
-    date: "Dec 2025 – Present",
+    date: "Apr 2026 – Present",
+    title: "Software Engineer",
+    company: "Kambala Solutions Pvt. Ltd. | Mangalore, Karnataka",
+    desc: "Working at a fintech company specializing in high-performance trading platforms, order management systems, real-time market data solutions, and enterprise applications for stock brokers and financial institutions. Developing backend REST APIs using Python and FastAPI. Designing and optimizing MariaDB/MySQL database schemas, SQL queries, and indexing strategies. Building modules for importing, processing, and validating large financial datasets. Implementing high-performance bulk data import/export utilities for CSV and SQL files. Improving database performance through query optimization and indexing. Working with Git for version control and collaborative development. Debugging production issues and enhancing application reliability.",
+    tech: ["Python", "FastAPI", "MariaDB", "MySQL", "SQLAlchemy", "Git", "GitHub", "Linux (Ubuntu)", "REST APIs", "CSV Data Processing"],
+  },
+  {
+    date: "Dec 2025 – Apr 2026",
     title: "Associate Software Engineer",
     company: "Yaticorp India Pvt Ltd",
     desc: "Building responsive and reusable frontend components using React, HTML, CSS, and JavaScript, delivering clean and user-friendly interfaces. Design and implement RESTful APIs with Node.js and MongoDB to support scalable backend functionality. Perform code reviews, identify and fix production-level bugs, and continuously optimize application performance for reliability. Deploy and maintain applications on Railway, Render, and Vercel, ensuring stable, secure, and high-availability production environments while collaborating closely with cross-functional teams.",
   },
   {
-    date: "May 2025 – Present",
+    date: "May 2025 – Apr 2026",
     title: "Marketing Automation Engineer",
     company: "Yaticorp India Pvt Ltd",
     desc: "Managing social media platforms across Instagram, Facebook, LinkedIn, and YouTube, executing SEO strategies using Google Search Console and SEMrush, planning and optimizing paid ad campaigns, and generating performance reports using Google Analytics and Meta Business Suite. Contributing to client-facing and internal application development involving frontend development using React, HTML, and CSS, backend REST API integration using Node.js and MongoDB, supporting application deployments using Railway, fixing production issues, and assisting in maintaining stable and scalable production environments.",
@@ -129,6 +136,30 @@ export const certifications = [
 ];
 
 export const projects = [
+  {
+    featured: true,
+    image: "/assets/moneyflowx.png",
+    alt: "MoneyFlowX App",
+    badge: "💸 Full-Stack Finance App",
+    badgeColor: "#2980b9",
+    title: "MoneyFlowX — Personal Finance & Expense Tracker",
+    desc: "A full-stack personal finance management platform with a React web app and React Native mobile app, backed by a Node.js/Express REST API and MongoDB. Helps users track expenses, manage bank accounts, monitor cash flow, plan EMIs, set savings goals, and invest via SIPs — all in one place.",
+    features: [
+      { icon: "fas fa-exchange-alt", label: "Cash Flow Tracking", detail: "Log and categorize income and expenses with real-time balance updates and visual analytics." },
+      { icon: "fas fa-university", label: "Bank Management", detail: "Add and manage multiple bank accounts with balance tracking and transfer history." },
+      { icon: "fas fa-chart-pie", label: "Analytics Dashboard", detail: "Interactive charts and summaries for spending patterns, monthly trends, and category breakdowns." },
+      { icon: "fas fa-mobile-alt", label: "Cross-Platform", detail: "React web app deployed on Vercel + React Native mobile app with shared Node.js/MongoDB backend." },
+    ],
+    architecture: ["React / React Native", "Node.js + Express", "MongoDB Atlas", "Vercel (Web)", "Render (API)"],
+    tech: ["React", "React Native", "Node.js", "Express", "MongoDB", "JWT Auth", "Firebase FCM", "Vercel", "Render"],
+    qrCode: { image: "/assets/scanner.png", label: "Scan to download the Android APK" },
+    links: [
+      { href: "/moneyflowx", icon: "fas fa-info-circle", title: "View Details", internal: true },
+      { href: "https://money-flow-x.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Web App" },
+      { href: "https://expo.dev/accounts/preethesh/projects/moneyflowx/builds/465fcdfd-490e-49d0-8611-641578870b66", icon: "fas fa-mobile-alt", title: "Download Android APK" },
+      { href: "https://github.com/Preethesh26/MoneyFlowX", icon: "fab fa-github", title: "View Code" },
+    ],
+  },
   {
     featured: true,
     image: "/assets/academy_pro.png",

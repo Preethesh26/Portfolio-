@@ -21,6 +21,11 @@ export default function Experience() {
                 <h3>{item.title}</h3>
                 <div className="company">{item.company}</div>
                 <p>{item.desc}</p>
+                {item.tech && (
+                  <div className="project-tech" style={{ marginTop: '0.75rem' }}>
+                    {item.tech.map(t => <span key={t}>{t}</span>)}
+                  </div>
+                )}
               </div>
             </div>
           ))}
