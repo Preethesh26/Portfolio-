@@ -92,6 +92,31 @@ function FeaturedProject({ p }) {
             </div>
           </div>
         )}
+        {p.apk && (
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '1rem',
+            marginBottom: '1.5rem'
+          }}
+        >
+          <a
+            href={p.apk}
+            download
+            className="btn btn-primary"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              textDecoration: 'none'
+            }}
+          >
+            <i className="fas fa-download" />
+            Download Android APK
+          </a>
+        </div>
+      )}
 
         <div className="project-tech">
           {p.tech.map(t => <span key={t}>{t}</span>)}

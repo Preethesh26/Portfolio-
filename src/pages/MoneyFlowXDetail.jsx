@@ -43,9 +43,20 @@ export default function MoneyFlowXDetail() {
               style={{ background: 'rgba(41,128,185,0.15)', border: '1px solid rgba(41,128,185,0.4)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#5dade2', textDecoration: 'none', fontWeight: 600 }}>
               <i className="fas fa-external-link-alt" /> Live Web App
             </a>
-            <a href="https://expo.dev/accounts/preethesh/projects/moneyflowx/builds/465fcdfd-490e-49d0-8611-641578870b66" target="_blank" rel="noreferrer"
-              style={{ background: 'rgba(46,204,113,0.12)', border: '1px solid rgba(46,204,113,0.35)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#2ecc71', textDecoration: 'none', fontWeight: 600 }}>
-              <i className="fas fa-mobile-alt" /> Download Android APK
+           <a
+              href="/apk/MoneyFlowX-v1.0.0.apk"
+              download
+              style={{
+                background: "rgba(46,204,113,0.12)",
+                border: "1px solid rgba(46,204,113,0.35)",
+                padding: "0.5rem 1.2rem",
+                borderRadius: "8px",
+                color: "#2ecc71",
+                textDecoration: "none",
+                fontWeight: 600,
+              }}
+            >
+              <i className="fas fa-download" /> Download Android APK
             </a>
             <a href="https://github.com/Preethesh26/MoneyFlowX" target="_blank" rel="noreferrer"
               style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.15)', padding: '0.5rem 1.2rem', borderRadius: '8px', color: '#fff', textDecoration: 'none', fontWeight: 600 }}>

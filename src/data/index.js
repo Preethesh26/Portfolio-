@@ -144,6 +144,7 @@ export const projects = [
     badgeColor: "#2980b9",
     title: "MoneyFlowX — Personal Finance & Expense Tracker",
     desc: "A full-stack personal finance management platform with a React web app and React Native mobile app, backed by a Node.js/Express REST API and MongoDB. Helps users track expenses, manage bank accounts, monitor cash flow, plan EMIs, set savings goals, and invest via SIPs — all in one place.",
+    apk: "/apk/MoneyFlowX-v1.0.0.apk",
     features: [
       { icon: "fas fa-exchange-alt", label: "Cash Flow Tracking", detail: "Log and categorize income and expenses with real-time balance updates and visual analytics." },
       { icon: "fas fa-university", label: "Bank Management", detail: "Add and manage multiple bank accounts with balance tracking and transfer history." },
@@ -156,7 +157,7 @@ export const projects = [
     links: [
       { href: "/moneyflowx", icon: "fas fa-info-circle", title: "View Details", internal: true },
       { href: "https://money-flow-x.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Web App" },
-      { href: "https://expo.dev/accounts/preethesh/projects/moneyflowx/builds/465fcdfd-490e-49d0-8611-641578870b66", icon: "fas fa-mobile-alt", title: "Download Android APK" },
+      { href: "https://preethesh-portfolio.netlify.app/apk/MoneyFlowX-v1.0.0.apk", icon: "fas fa-mobile-alt", title: "Download Android APK" },
       { href: "https://github.com/Preethesh26/MoneyFlowX", icon: "fab fa-github", title: "View Code" },
     ],
   },
