@@ -155,7 +155,7 @@ export const projects = [
     links: [
       { href: "/fitsync", icon: "fas fa-info-circle", title: "View Details", internal: true },
       { href: "https://fitnesssync.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Demo" },
-      { href: "https://github.com/Preethesh26/muscle-gain-tracker/actions/workflows/android-apk.yml", icon: "fas fa-download", title: "Get Android APK" },
+      { href: "https://hltjsinmllzrgycxhkga.supabase.co/storage/v1/object/public/app-downloads/FitSync.apk", icon: "fas fa-download", title: "Download Android APK" },
       { href: "https://github.com/Preethesh26/muscle-gain-tracker", icon: "fab fa-github", title: "View Code" },
     ],
   },
