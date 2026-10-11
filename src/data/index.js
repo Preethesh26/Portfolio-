@@ -138,6 +138,27 @@ export const certifications = [
 export const projects = [
   {
     featured: true,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=85",
+    alt: "Fitness training equipment representing FitSync",
+    badge: "💪 Fitness & Health Tracking",
+    badgeColor: "#22c55e",
+    title: "FitSync — Fitness & Muscle Gain Tracker",
+    desc: "A cross-device fitness tracker built to support muscle-gain goals. Track meals, calories, protein, body weight, workouts, water, habits, and daily progress. The Android app integrates with Health Connect to read supported activity and sleep data, while Supabase provides account-based cloud syncing.",
+    features: [
+      { icon: "fas fa-utensils", label: "Nutrition Tracking", detail: "Log meals and portions while tracking daily calories and protein." },
+      { icon: "fas fa-heartbeat", label: "Health Connect", detail: "Read supported steps, exercise, sleep, and other health metrics with user-granted permissions." },
+      { icon: "fas fa-chart-line", label: "Progress Tracking", detail: "Review body-weight history, habits, workouts, and daily logs." },
+      { icon: "fas fa-cloud", label: "Cloud Sync", detail: "Sign in and keep personal tracking data available across devices." },
+    ],
+    architecture: ["React + Vite", "Capacitor Android", "Health Connect", "Supabase Auth + Postgres", "Vercel"],
+    tech: ["React", "Tailwind CSS", "Capacitor", "Android Health Connect", "Supabase", "Vercel"],
+    links: [
+      { href: "https://fitnesstracker-92iwdmfy2-preetheshs-projects-5a0825cd.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Demo" },
+      { href: "https://github.com/Preethesh26/muscle-gain-tracker", icon: "fab fa-github", title: "View Code" },
+    ],
+  },
+  {
+    featured: true,
     image: "/assets/moneyflowx.png",
     alt: "MoneyFlowX App",
     badge: "💸 Full-Stack Finance App",
