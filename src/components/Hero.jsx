@@ -27,7 +27,8 @@ export default function Hero() {
     <section id="hero" className="hero fade-in">
       <div className="container hero-content">
         <div className="hero-text">
-          <div className="badge">Associate Software Engineer</div>
+          <div className="badge">Software Engineer</div>
+          <p className="hero-experience"><i className="fas fa-briefcase" aria-hidden="true" /> 1+ year of professional experience</p>
           <h1>Hi, I'm <br /><span className="gradient-text typing-effect" ref={typingRef} /></h1>
           <p className="hero-desc">
             Passionate AIML engineering graduate bridging the gap between full-stack development,
