@@ -30,11 +30,6 @@ export default function Certifications() {
                 </div>
               </div>
               <div className="cert-body">
-                {c.imageUrl && (
-                  <a href={c.credentialUrl} target="_blank" rel="noreferrer" aria-label={`View ${c.title} certificate`} style={{ display: 'block', marginBottom: '16px' }}>
-                    <img src={c.imageUrl} alt={`${c.title} certificate preview`} loading="lazy" style={{ display: 'block', width: '100%', maxHeight: '220px', objectFit: 'contain', borderRadius: '10px', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--glass-border)' }} />
-                  </a>
-                )}
                 <div className="skill-tags">
                   {c.tags.map(t => <span key={t} className="skill-tag">{t}</span>)}
                 </div>
