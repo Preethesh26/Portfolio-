@@ -127,6 +127,13 @@ export const certifications = [
     credentialUrl: "https://drive.google.com/file/d/1phen-qxkIcrLK6azR6ZSeDrdYOsTyKZ3/view?usp=sharing",
   },
   {
+    icon: "fab fa-microsoft",
+    title: "Azure Solutions Architect",
+    issuer: "MicroDegree | June 2026",
+    tags: ["Microsoft Azure", "Cloud Architecture", "Scalability", "Security", "Reliability"],
+    credentialUrl: "https://drive.google.com/file/d/1rP2pyiCRzgm0YPerq1_tnL-RUPbIzHLs/view?usp=drivesdk",
+  },
+  {
     icon: "fas fa-cloud",
     title: "AWS & DevOps Internship Program",
     issuer: "MicroDegree | March 2026",
