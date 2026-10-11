@@ -13,11 +13,11 @@ export default function About() {
         </div>
         <div className="about-content fade-up" ref={contentRef}>
           <div className="about-text">
-            <p className="lead">AIML Engineering Student &amp; Tech Enthusiast</p>
+            <p className="lead">Software Engineer &amp; Full-Stack Developer</p>
             <p>
               I am Preethesh, a B.E. graduate in Artificial Intelligence and Machine Learning from
-              Vivekananda College of Engineering and Technology, Puttur, currently working as an
-              Associate Software Engineer. With a CGPA of 9.09, I combine strong academic foundations
+              Vivekananda College of Engineering and Technology, Puttur, currently working as a
+              Software Engineer. With a CGPA of 9.09, I combine strong academic foundations
               with hands-on industry experience in building and maintaining production-ready applications.
             </p>
             <p>
