@@ -31,8 +31,7 @@ export default function Hero() {
           <p className="hero-experience"><i className="fas fa-briefcase" aria-hidden="true" /> 1+ year of professional experience</p>
           <h1>Hi, I'm <br /><span className="gradient-text typing-effect" ref={typingRef} /></h1>
           <p className="hero-desc">
-            Passionate AIML engineering graduate bridging the gap between full-stack development,
-            cloud technologies, and artificial intelligence.
+            Software Engineer at Kambala Solutions, building backend APIs, database-driven applications, and reliable software solutions using modern technologies.
           </p>
           <div className="hero-btns">
             <a href="#experience" className="btn btn-primary">View Experience</a>
