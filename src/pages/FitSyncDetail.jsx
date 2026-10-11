@@ -42,11 +42,11 @@ export default function FitSyncDetail() {
           <h2>🔗 Project Links</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
             <a href="https://fitnesssync.vercel.app/" target="_blank" rel="noreferrer" style={{ ...actionStyle, borderColor: 'rgba(59,130,246,0.4)', background: 'rgba(59,130,246,0.13)', color: '#93c5fd' }}><i className="fas fa-external-link-alt" /> Open FitSync Web App</a>
-            <a href="https://github.com/Preethesh26/muscle-gain-tracker/actions/workflows/android-apk.yml" target="_blank" rel="noreferrer" style={actionStyle}><i className="fas fa-download" /> Get Android APK</a>
+            <a href="https://hltjsinmllzrgycxhkga.supabase.co/storage/v1/object/public/app-downloads/FitSync.apk" download="FitSync.apk" target="_blank" rel="noreferrer" style={actionStyle}><i className="fas fa-download" /> Get Android APK</a>
             <a href="https://github.com/Preethesh26/muscle-gain-tracker" target="_blank" rel="noreferrer" style={{ ...actionStyle, borderColor: 'rgba(255,255,255,0.18)', background: 'rgba(255,255,255,0.05)', color: '#fff' }}><i className="fab fa-github" /> GitHub Repository</a>
           </div>
           <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6, marginTop: '1rem' }}>
-            Android APK access opens the GitHub Actions build workflow. Open a successful build and download its APK artifact. A direct portfolio download can be added once the APK file is hosted with the portfolio.
+            Download for Android uses the same direct APK download URL as the FitSync website.
           </p>
         </div>
         <div className="pd-section">
