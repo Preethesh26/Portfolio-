@@ -130,6 +130,7 @@ export const certifications = [
     icon: "fab fa-microsoft",
     title: "Azure Solutions Architect",
     issuer: "MicroDegree | June 2026",
+    imageUrl: "https://drive.google.com/uc?export=view&id=1rP2pyiCRzgm0YPerq1_tnL-RUPbIzHLs",
     tags: ["Microsoft Azure", "Cloud Architecture", "Scalability", "Security", "Reliability"],
     credentialUrl: "https://drive.google.com/file/d/1rP2pyiCRzgm0YPerq1_tnL-RUPbIzHLs/view?usp=drivesdk",
   },
