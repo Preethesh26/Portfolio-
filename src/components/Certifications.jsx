@@ -73,10 +73,9 @@ export default function Certifications() {
                 <span className="learning-badge completed-badge"><i className="fas fa-check" /></span>
                 DevOps Engineering
               </li>
-              <li className="upcoming">
-                <span className="learning-badge upcoming-badge"><i className="fas fa-clock" /></span>
-                Generative AI &amp; LLM Applications
-                <span className="next-tag">Next</span>
+              <li className="completed">
+                <span className="learning-badge completed-badge"><i className="fas fa-check" /></span>
+                Azure Solutions Architect
               </li>
             </ul>
             <div className="skill-tags" style={{ marginTop: '16px' }}>
