@@ -35,7 +35,7 @@ export default function Hero() {
             cloud technologies, and artificial intelligence.
           </p>
           <div className="hero-btns">
-            <a href="#projects" className="btn btn-primary">View Projects</a>
+            <a href="#experience" className="btn btn-primary">View Experience</a>
             <a href="#contact" className="btn btn-outline">Contact Me</a>
           </div>
           <div className="social-links">
