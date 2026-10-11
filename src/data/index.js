@@ -153,7 +153,7 @@ export const projects = [
     architecture: ["React + Vite", "Capacitor Android", "Health Connect", "Supabase Auth + Postgres", "Vercel"],
     tech: ["React", "Tailwind CSS", "Capacitor", "Android Health Connect", "Supabase", "Vercel"],
     links: [
-      { href: "https://fitnesstracker-92iwdmfy2-preetheshs-projects-5a0825cd.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Demo" },
+      { href: "https://fitnesssync.vercel.app/", icon: "fas fa-external-link-alt", title: "Live Demo" },
       { href: "https://github.com/Preethesh26/muscle-gain-tracker", icon: "fab fa-github", title: "View Code" },
     ],
   },
